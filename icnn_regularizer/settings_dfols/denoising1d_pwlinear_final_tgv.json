@@ -1,0 +1,39 @@
+{
+    "dataset": {
+        "type": "denoising1d",
+        "xmin": 0.0,
+        "xmax": 1.0,
+        "npixels": 64,
+        "seed": 0,
+        "ntrain": 10,
+        "ntest": 10,
+        "noise_level": 0.2,
+        "img_type": "pw_linear"
+    },
+    "dfols": {
+        "maxevals": 1000,
+        "rhoend": 1e-4,
+        "slow_tr_decrease": false,
+        "params": {
+            "logging.save_diagnostic_info": false,
+            "restarts.use_restarts": false,
+            "noise.quit_on_noise_level": false,
+            "slow.max_slow_iters": 1000
+        }
+    },
+    "regularizer": {
+        "type": "tgv",
+        "pdhg_niters": 2000,
+        "pdhg_tol": 1e-4,
+        "log10_alpha": {
+            "init_vals": [-5.0, -4.0, -3.0, -2.0, -1.0, 0.0, 1.0, 2.0, 3.0],
+            "min": -5.0,
+            "max": 3.0
+        },
+        "log10_beta": {
+            "init_vals": [-5.0, -4.0, -3.0, -2.0, -1.0, 0.0, 1.0, 2.0, 3.0],
+            "min": -5.0,
+            "max": 3.0
+        }
+    }
+}

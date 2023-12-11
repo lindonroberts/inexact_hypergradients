@@ -1,0 +1,38 @@
+{
+    "dataset": {
+        "img_type": "pw_linear",
+        "noise_level": 0.2,
+        "npixels": 64,
+        "ntest": 10,
+        "ntrain": 10,
+        "seed": 0,
+        "type": "denoising1d",
+        "xmax": 1.0,
+        "xmin": 0.0
+    },
+    "gd_solver": {
+        "decreasing_tol_stepsize": false,
+        "flat_thresh": 1e-05,
+        "init_stepsize": 0.001,
+        "init_tol": 1,
+        "max_flat_iters": 100,
+        "max_lower_iters": 100000000,
+        "max_lower_iters_per_image": 10000000,
+        "max_wall_runtime_seconds": 172800,
+        "save_train_recons": true
+    },
+    "regularizer": {
+        "L2_start_value": -5.0,
+        "beta": 1000,
+        "conv_start_value": 0.0,
+        "have_fixed_L2": false,
+        "init_weights_max": 1.0,
+        "init_weights_min": -1.0,
+        "seed": 0,
+        "symmetric_kernel": false,
+        "type": "shallow1d"
+    },
+    "runtime_wall": 172800.704879,
+    "time_end": "2022-03-26 11:20:28",
+    "time_start": "2022-03-24 11:20:27"
+}
